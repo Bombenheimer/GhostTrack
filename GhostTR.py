@@ -13,6 +13,14 @@ import phonenumbers
 from phonenumbers import carrier, geocoder, timezone
 from sys import stderr
 
+# EXTERNAL MODULE GUARDS TO CHECK IF USER INSTALLED LIBRARIES
+try:
+    import requests
+    
+except(ModuleNotFoundError):
+    printf("ERROR: Module requests has not been installed!")
+    return 1
+
 Bl = '\033[30m'  # VARIABLE BUAT WARNA CUYY
 Re = '\033[1;31m'
 Gr = '\033[1;32m'
