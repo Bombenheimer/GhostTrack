@@ -34,6 +34,7 @@ def is_option(func):
 
 
     return wrapper
+return 0
 
 
 # FUNCTIONS FOR MENU
@@ -75,6 +76,7 @@ def IP_Track():
     print(f"{Wh} Offset          :{Gr}", ip_data["timezone"]["offset"])
     print(f"{Wh} UTC             :{Gr}", ip_data["timezone"]["utc"])
     print(f"{Wh} Current Time    :{Gr}", ip_data["timezone"]["current_time"])
+    return 0
 
 
 @is_option
@@ -116,6 +118,7 @@ def phoneGW():
         print(f" {Wh}Type                 :{Gr} This is a fixed-line number")
     else:
         print(f" {Wh}Type                 :{Gr} This is another type of number")
+    return 0
 
 
 @is_option
@@ -164,6 +167,7 @@ def TrackLu():
     print()
     for site, url in results.items():
         print(f" {Wh}[ {Gr}+ {Wh}] {site} : {Gr}{url}")
+    return 0
 
 
 @is_option
@@ -174,6 +178,7 @@ def showIP():
     print(f"\n {Wh}========== {Gr}SHOW INFORMATION YOUR IP {Wh}==========")
     print(f"\n {Wh}[{Gr} + {Wh}] Your IP Adrress : {Gr}{Show_IP}")
     print(f"\n {Wh}==============================================")
+    return 0
 
 
 # OPTIONS
@@ -214,6 +219,7 @@ def clear():
     # for mac and linux
     else:
         _ = os.system('clear')
+    return 0
 
 
 def call_option(opt):
@@ -225,6 +231,7 @@ def call_option(opt):
                 option['func']()
             else:
                 print('No function detected')
+    return 0
 
 
 def execute_option(opt):
@@ -240,6 +247,7 @@ def execute_option(opt):
         print(f'\n{Wh}[ {Re}! {Wh}] {Re}Exit')
         time.sleep(2)
         exit()
+    return 0
 
 
 def option_text():
@@ -270,6 +278,7 @@ def option():
     """)
 
     stderr.writelines(f"\n\n\n{option_text()}")
+    return 0
 
 
 def run_banner():
@@ -291,6 +300,7 @@ def run_banner():
               `'`'`'`---..,___`;.-'
         """)
     time.sleep(0.5)
+    return 0
 
 
 def main():
@@ -304,6 +314,7 @@ def main():
         print(f'\n{Wh}[ {Re}! {Wh}] {Re}Please input number')
         time.sleep(2)
         main()
+    return 0
 
 
 if __name__ == '__main__':
