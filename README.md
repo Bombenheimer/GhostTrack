@@ -6,24 +6,25 @@ Useful tool to track location or mobile number, so this tool can be called osint
 New update :
 ```Version 2.2```
 
-### Instalation on Linux (deb)
+### Instalation on Linux (Debian)
 ```
 sudo apt-get install git
 sudo apt-get install python3
 ```
 
-### Instalation on Termux
+### Installation on Termux
 ```
 pkg install git
 pkg install python3
 ```
 
-### Usage Tool
+### Program Usage (Linux, macOS)
 ```
 git clone https://github.com/HunxByts/GhostTrack.git
 cd GhostTrack
 pip3 install -r requirements.txt
-python3 GhostTR.py
+chmod +x GhostTR.py
+./GhostTR.py
 ```
 
 Display on the menu ```IP Tracker```
